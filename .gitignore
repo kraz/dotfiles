@@ -1,0 +1,4 @@
+*.key.gpg.asc
+ownertrust.txt
+.dotfiles-backup/
+local.env

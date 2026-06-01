@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(wc:*)",
+      "Bash(git:*)",
+      "Bash(php -l:*)",
+      "Bash(chmod:*)",
+      "Bash(composer show:*)",
+      "Bash(php bin/console:*)",
+      "Bash(php vendor/bin/phpunit:*)",
+      "Bash(bin/phpunit:*)",
+      "Bash(php:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "WebSearch",
+      "Bash(php7.2 -l:*)",
+      "Bash(php8.4-l:*)",
+      "WebFetch(domain:www.elastic.co)",
+      "WebFetch(domain:github.com)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline-command.sh"
+  },
+  "effortLevel": "high",
+  "promptSuggestionEnabled": false,
+  "awaySummaryEnabled": false,
+  "autoUpdatesChannel": "stable",
+  "theme": "dark-daltonized",
+  "verbose": true,
+  "voiceEnabled": true
+}

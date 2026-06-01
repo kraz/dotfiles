@@ -1,0 +1,32 @@
+[color]
+    ui = true
+
+[core]
+    excludesfile = ~/.gitignore
+
+[merge]
+    tool = vimdiff
+
+[diff]
+    tool = vimdiff
+
+[difftool]
+    prompt = false
+
+[mergetool]
+    prompt = false
+
+[credential]
+    helper = cache --timeout=57600
+
+[alias]
+    aliases = "!f() { git config --global -l | grep alias | sort; }; f"
+    lol     = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    st      = status -sb
+    co      = checkout
+    br      = branch
+    undo    = reset --soft HEAD~1
+
+# Directory-based identities are generated locally — run scripts/setup-identities.sh
+[include]
+    path = ~/.gitconfig.local
