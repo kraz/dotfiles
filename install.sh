@@ -34,6 +34,7 @@ run_step 03-zsh.sh
 run_step 04-tools.sh
 run_step 05-docker.sh
 run_step 06-link.sh
+run_step 07-git-credentials.sh
 
 echo ""
 echo "╭───────────────────────────────────────────────────────────────╮"
