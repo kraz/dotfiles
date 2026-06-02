@@ -125,7 +125,7 @@ function colormap() {
 _distro="$(if [ -e /etc/os-release ]; then file='/etc/os-release'; else file='/usr/lib/os-release'; fi; awk -F '=' '/^ID=/ { gsub(/"/, "", $2); print $2 }' "$file")"
 
 case $_distro in
-    *kali*)                  ICON="ﴣ";;
+    *kali*)                  ICON="";;
     *arch*)                  ICON="";;
     *debian*)                ICON="";;
     *raspbian*)              ICON="";;

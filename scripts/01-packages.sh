@@ -10,6 +10,7 @@ sudo apt-get update -qq
 
 echo "==> Installing base packages..."
 sudo apt-get install -y \
+  jq \
   zsh \
   git \
   curl \
