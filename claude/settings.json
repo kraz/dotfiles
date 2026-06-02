@@ -31,5 +31,6 @@
   "autoUpdatesChannel": "stable",
   "theme": "dark-daltonized",
   "verbose": true,
+  "autoCompactEnabled": true,
   "voiceEnabled": true
 }

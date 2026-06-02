@@ -116,6 +116,11 @@ alias la="eza --icons --group-directories-first -la"
 alias g="goto"
 alias grep='grep --color'
 
+# Measure HTTP response time breakdown for a URL
+function curl-time() {
+  curl -w '     time_namelookup:  %{time_namelookup}s\n        time_connect:  %{time_connect}s\n     time_appconnect:  %{time_appconnect}s\n    time_pretransfer:  %{time_pretransfer}s\n       time_redirect:  %{time_redirect}s\n  time_starttransfer:  %{time_starttransfer}s\n                       ---------\n          time_total:  %{time_total}s\n' -o /dev/null -k -s "$1"
+}
+
 # Print terminal color palette
 function colormap() {
   for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
