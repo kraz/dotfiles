@@ -4,6 +4,13 @@ Personal environment configuration and setup
 
 ---
 
+## Supported OS
+
+| Distribution     | Edition            |
+|------------------|--------------------|
+| Ubuntu 26.04 LTS | Any desktop        |
+| Fedora 44        | KDE Plasma Desktop |
+
 ## Quick start
 
 ```bash
@@ -11,6 +18,8 @@ git clone https://github.com/kraz/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./install.sh
 ```
+
+The installer detects your OS automatically and uses the appropriate package manager (`apt` on Ubuntu, `dnf` on Fedora).
 
 ## Features
 - All scripts are **idempotent** - safe to re-run if something fails mid-way.

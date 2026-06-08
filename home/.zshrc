@@ -85,6 +85,9 @@ source $ZSH/oh-my-zsh.sh
 # Goto
 [[ -s "/usr/local/share/goto.sh" ]] && source /usr/local/share/goto.sh
 
+# zoxide
+eval "$(zoxide init zsh)"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

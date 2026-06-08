@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Bootstrap a fresh Ubuntu 26.04 development environment.
+# Bootstrap a fresh development environment (Ubuntu 26.04 or Fedora 44 KDE Plasma).
 # Run once after cloning this repo.
 #
 # Usage:
@@ -15,10 +15,15 @@ set -euo pipefail
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$DOTFILES_DIR"
 
+# shellcheck source=scripts/lib/os.sh
+source "$DOTFILES_DIR/scripts/lib/os.sh"
+require_supported_os
+
 echo ""
-echo "╭───────────────────────────────────╮"
-echo "│  dotfiles bootstrap — Ubuntu LTS  │"
-echo "╰───────────────────────────────────╯"
+echo "╭──────────────────────────────────────────────────────────────╮"
+echo "│  dotfiles bootstrap                                          │"
+printf "│  OS: %-56s│\n" "${OS_ID} ${OS_VERSION}"
+echo "╰──────────────────────────────────────────────────────────────╯"
 echo ""
 
 run_step() {
