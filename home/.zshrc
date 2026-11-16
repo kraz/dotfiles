@@ -163,7 +163,7 @@ export STARSHIP_DISTRO="$ICON"
 export PATH="$HOME/.local/bin:$PATH"
 [[ -d "$HOME/neovim/bin" ]]       && export PATH="$HOME/neovim/bin:$PATH"
 [[ -d "$HOME/lib/maven/bin" ]]    && export PATH="$HOME/lib/maven/bin:$PATH"
-[[ -d "$HOME/.symfony5/bin" ]]    && export PATH="$HOME/.symfony5/bin:$PATH"
+[[ -d "$HOME/.config/symfony-cli/bin" ]]    && export PATH="$HOME/.config/symfony-cli/bin:$PATH"
 
 # Starship prompt
 eval "$(starship init zsh)"
@@ -178,3 +178,5 @@ echo -n -e "\e[2 q"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ]            && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ]   && \. "$NVM_DIR/bash_completion"
+
+export PHP_IDE_CONFIG=serverName=cli-php
